@@ -1,0 +1,1338 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="1_Authentification_Admin" id="1_Authentification_Admin">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="715" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="1_Authentification_Admin_2" value="Authentification de l&#x27;Administrateur (identifiants + mot de passe)" style="text;html=1;align=center;verticalAlign=middle;fontStyle=1;fontSize=15;fontColor=#3B2F2A;" vertex="1" parent="1">
+<mxGeometry x="40" y="0" width="950" height="30" as="geometry" />
+</mxCell>
+<mxCell id="1_Authentification_Admin_3" value="Administrateur" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E9DCC3;strokeColor=#5C4033;fontColor=#3B2F2A;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+<mxGeometry x="-5" y="40" width="170" height="50" as="geometry" />
+</mxCell>
+<mxCell id="1_Authentification_Admin_4" style="endArrow=none;dashed=1;html=1;strokeColor=#8B6F47;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="80" y="90" as="sourcePoint" />
+<mxPoint x="80" y="680" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="1_Authentification_Admin_5" value="Frontend
+(React)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E9DCC3;strokeColor=#5C4033;fontColor=#3B2F2A;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+<mxGeometry x="215" y="40" width="170" height="50" as="geometry" />
+</mxCell>
+<mxCell id="1_Authentification_Admin_6" style="endArrow=none;dashed=1;html=1;strokeColor=#8B6F47;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="300" y="90" as="sourcePoint" />
+<mxPoint x="300" y="680" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="1_Authentification_Admin_7" value="API
+(Spring Boot)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E9DCC3;strokeColor=#5C4033;fontColor=#3B2F2A;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+<mxGeometry x="435" y="40" width="170" height="50" as="geometry" />
+</mxCell>
+<mxCell id="1_Authentification_Admin_8" style="endArrow=none;dashed=1;html=1;strokeColor=#8B6F47;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="520" y="90" as="sourcePoint" />
+<mxPoint x="520" y="680" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="1_Authentification_Admin_9" value="Service Auth" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E9DCC3;strokeColor=#5C4033;fontColor=#3B2F2A;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+<mxGeometry x="655" y="40" width="170" height="50" as="geometry" />
+</mxCell>
+<mxCell id="1_Authentification_Admin_10" style="endArrow=none;dashed=1;html=1;strokeColor=#8B6F47;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="740" y="90" as="sourcePoint" />
+<mxPoint x="740" y="680" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="1_Authentification_Admin_11" value="PostgreSQL" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E9DCC3;strokeColor=#5C4033;fontColor=#3B2F2A;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+<mxGeometry x="865" y="40" width="170" height="50" as="geometry" />
+</mxCell>
+<mxCell id="1_Authentification_Admin_12" style="endArrow=none;dashed=1;html=1;strokeColor=#8B6F47;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="950" y="90" as="sourcePoint" />
+<mxPoint x="950" y="680" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="1_Authentification_Admin_13" value="Saisir identifiants (email + mot de passe)" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="80" y="130" as="sourcePoint" />
+<mxPoint x="294.0" y="130" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="1_Authentification_Admin_14" value="POST /api/auth/login" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="306.0" y="185" as="sourcePoint" />
+<mxPoint x="514.0" y="185" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="1_Authentification_Admin_15" value="authentifier(email, motDePasse)" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="526.0" y="240" as="sourcePoint" />
+<mxPoint x="734.0" y="240" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="1_Authentification_Admin_16" value="SELECT administrateur WHERE email = ?" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="746.0" y="295" as="sourcePoint" />
+<mxPoint x="944.0" y="295" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="1_Authentification_Admin_17" value="Administrateur trouvé (hash du mot de passe)" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;dashed=1;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="944.0" y="350" as="sourcePoint" />
+<mxPoint x="746.0" y="350" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="1_Authentification_Admin_18" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FBF7EF;strokeColor=#5C4033;" vertex="1" parent="1">
+<mxGeometry x="944.0" y="295" width="12" height="55" as="geometry" />
+</mxCell>
+<mxCell id="1_Authentification_Admin_19" value="Vérifier le hash du mot de passe" style="html=1;endArrow=block;rounded=1;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="746.0" y="405" as="sourcePoint" />
+<mxPoint x="816.0" y="405" as="targetPoint" />
+<Array as="points">
+<mxPoint x="816.0" y="435" />
+<mxPoint x="746.0" y="435" />
+</Array>
+</mxGeometry>
+</mxCell>
+<mxCell id="1_Authentification_Admin_20" value="Génération du token JWT (rôle=ADMIN)" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;dashed=1;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="734.0" y="490" as="sourcePoint" />
+<mxPoint x="526.0" y="490" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="1_Authentification_Admin_21" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FBF7EF;strokeColor=#5C4033;" vertex="1" parent="1">
+<mxGeometry x="734.0" y="240" width="12" height="250" as="geometry" />
+</mxCell>
+<mxCell id="1_Authentification_Admin_22" value="200 OK + token JWT" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;dashed=1;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="514.0" y="545" as="sourcePoint" />
+<mxPoint x="306.0" y="545" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="1_Authentification_Admin_23" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FBF7EF;strokeColor=#5C4033;" vertex="1" parent="1">
+<mxGeometry x="514.0" y="185" width="12" height="360" as="geometry" />
+</mxCell>
+<mxCell id="1_Authentification_Admin_24" value="Accès au tableau de bord administrateur" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;dashed=1;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="294.0" y="600" as="sourcePoint" />
+<mxPoint x="80" y="600" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="1_Authentification_Admin_25" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FBF7EF;strokeColor=#5C4033;" vertex="1" parent="1">
+<mxGeometry x="294.0" y="130" width="12" height="470" as="geometry" />
+</mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="2_Identification_Employe" id="2_Identification_Employe">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="660" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2_Identification_Employe_2" value="Identification de l&#x27;Employé (sélection dans la liste des employés — pas d&#x27;authentification)" style="text;html=1;align=center;verticalAlign=middle;fontStyle=1;fontSize=15;fontColor=#3B2F2A;" vertex="1" parent="1">
+<mxGeometry x="40" y="0" width="950" height="30" as="geometry" />
+</mxCell>
+<mxCell id="2_Identification_Employe_3" value="Employé" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E9DCC3;strokeColor=#5C4033;fontColor=#3B2F2A;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+<mxGeometry x="-5" y="40" width="170" height="50" as="geometry" />
+</mxCell>
+<mxCell id="2_Identification_Employe_4" style="endArrow=none;dashed=1;html=1;strokeColor=#8B6F47;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="80" y="90" as="sourcePoint" />
+<mxPoint x="80" y="520" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="2_Identification_Employe_5" value="Frontend
+(React)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E9DCC3;strokeColor=#5C4033;fontColor=#3B2F2A;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+<mxGeometry x="235" y="40" width="170" height="50" as="geometry" />
+</mxCell>
+<mxCell id="2_Identification_Employe_6" style="endArrow=none;dashed=1;html=1;strokeColor=#8B6F47;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="320" y="90" as="sourcePoint" />
+<mxPoint x="320" y="520" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="2_Identification_Employe_7" value="API
+(Spring Boot)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E9DCC3;strokeColor=#5C4033;fontColor=#3B2F2A;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+<mxGeometry x="475" y="40" width="170" height="50" as="geometry" />
+</mxCell>
+<mxCell id="2_Identification_Employe_8" style="endArrow=none;dashed=1;html=1;strokeColor=#8B6F47;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="560" y="90" as="sourcePoint" />
+<mxPoint x="560" y="520" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="2_Identification_Employe_9" value="PostgreSQL" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E9DCC3;strokeColor=#5C4033;fontColor=#3B2F2A;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+<mxGeometry x="715" y="40" width="170" height="50" as="geometry" />
+</mxCell>
+<mxCell id="2_Identification_Employe_10" style="endArrow=none;dashed=1;html=1;strokeColor=#8B6F47;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="800" y="90" as="sourcePoint" />
+<mxPoint x="800" y="520" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="2_Identification_Employe_11" value="Accéder à l&#x27;application" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="80" y="130" as="sourcePoint" />
+<mxPoint x="314.0" y="130" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="2_Identification_Employe_12" value="GET /api/employes/" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="326.0" y="185" as="sourcePoint" />
+<mxPoint x="554.0" y="185" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="2_Identification_Employe_13" value="SELECT employés" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="566.0" y="240" as="sourcePoint" />
+<mxPoint x="794.0" y="240" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="2_Identification_Employe_14" value="Liste des employés (numéro, nom, prénom, département)" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;dashed=1;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="794.0" y="295" as="sourcePoint" />
+<mxPoint x="566.0" y="295" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="2_Identification_Employe_15" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FBF7EF;strokeColor=#5C4033;" vertex="1" parent="1">
+<mxGeometry x="794.0" y="240" width="12" height="55" as="geometry" />
+</mxCell>
+<mxCell id="2_Identification_Employe_16" value="200 OK + liste des employés" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;dashed=1;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="554.0" y="350" as="sourcePoint" />
+<mxPoint x="326.0" y="350" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="2_Identification_Employe_17" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FBF7EF;strokeColor=#5C4033;" vertex="1" parent="1">
+<mxGeometry x="554.0" y="185" width="12" height="165" as="geometry" />
+</mxCell>
+<mxCell id="2_Identification_Employe_18" value="Sélectionner son nom dans la liste déroulante" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="80" y="405" as="sourcePoint" />
+<mxPoint x="314.0" y="405" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="2_Identification_Employe_19" value="Mémoriser l&#x27;employé sélectionné (session locale)" style="html=1;endArrow=block;rounded=1;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="326.0" y="460" as="sourcePoint" />
+<mxPoint x="396.0" y="460" as="targetPoint" />
+<Array as="points">
+<mxPoint x="396.0" y="490" />
+<mxPoint x="326.0" y="490" />
+</Array>
+</mxGeometry>
+</mxCell>
+<mxCell id="2_Identification_Employe_20" value="Accès au tableau de bord employé" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;dashed=1;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="314.0" y="545" as="sourcePoint" />
+<mxPoint x="80" y="545" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="2_Identification_Employe_21" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FBF7EF;strokeColor=#5C4033;" vertex="1" parent="1">
+<mxGeometry x="314.0" y="405" width="12" height="140" as="geometry" />
+</mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="3_Consulter_disponibilite" id="3_Consulter_disponibilite">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="740" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="3_Consulter_disponibilite_2" value="Consulter la disponibilité d&#x27;une salle (Employé identifié)" style="text;html=1;align=center;verticalAlign=middle;fontStyle=1;fontSize=15;fontColor=#3B2F2A;" vertex="1" parent="1">
+<mxGeometry x="40" y="0" width="1100" height="30" as="geometry" />
+</mxCell>
+<mxCell id="3_Consulter_disponibilite_3" value="Employé" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E9DCC3;strokeColor=#5C4033;fontColor=#3B2F2A;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+<mxGeometry x="-5" y="40" width="170" height="50" as="geometry" />
+</mxCell>
+<mxCell id="3_Consulter_disponibilite_4" style="endArrow=none;dashed=1;html=1;strokeColor=#8B6F47;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="80" y="90" as="sourcePoint" />
+<mxPoint x="80" y="680" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="3_Consulter_disponibilite_5" value="Frontend
+(React)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E9DCC3;strokeColor=#5C4033;fontColor=#3B2F2A;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+<mxGeometry x="235" y="40" width="170" height="50" as="geometry" />
+</mxCell>
+<mxCell id="3_Consulter_disponibilite_6" style="endArrow=none;dashed=1;html=1;strokeColor=#8B6F47;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="320" y="90" as="sourcePoint" />
+<mxPoint x="320" y="680" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="3_Consulter_disponibilite_7" value="API
+(Spring Boot)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E9DCC3;strokeColor=#5C4033;fontColor=#3B2F2A;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+<mxGeometry x="475" y="40" width="170" height="50" as="geometry" />
+</mxCell>
+<mxCell id="3_Consulter_disponibilite_8" style="endArrow=none;dashed=1;html=1;strokeColor=#8B6F47;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="560" y="90" as="sourcePoint" />
+<mxPoint x="560" y="680" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="3_Consulter_disponibilite_9" value="Service
+Réservation" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E9DCC3;strokeColor=#5C4033;fontColor=#3B2F2A;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+<mxGeometry x="715" y="40" width="170" height="50" as="geometry" />
+</mxCell>
+<mxCell id="3_Consulter_disponibilite_10" style="endArrow=none;dashed=1;html=1;strokeColor=#8B6F47;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="800" y="90" as="sourcePoint" />
+<mxPoint x="800" y="680" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="3_Consulter_disponibilite_11" value="PostgreSQL" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E9DCC3;strokeColor=#5C4033;fontColor=#3B2F2A;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+<mxGeometry x="955" y="40" width="170" height="50" as="geometry" />
+</mxCell>
+<mxCell id="3_Consulter_disponibilite_12" style="endArrow=none;dashed=1;html=1;strokeColor=#8B6F47;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="1040" y="90" as="sourcePoint" />
+<mxPoint x="1040" y="680" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="3_Consulter_disponibilite_13" value="Choisir créneau + filtres (type, capacité min.)" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="80" y="130" as="sourcePoint" />
+<mxPoint x="314.0" y="130" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="3_Consulter_disponibilite_14" value="GET /api/salles/disponibles?debut&amp;fin&amp;type&amp;capacite" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="326.0" y="185" as="sourcePoint" />
+<mxPoint x="554.0" y="185" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="3_Consulter_disponibilite_15" value="rechercherSallesDisponibles(criteres)" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="566.0" y="240" as="sourcePoint" />
+<mxPoint x="794.0" y="240" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="3_Consulter_disponibilite_16" value="SELECT salles WHERE type/capacité" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="806.0" y="295" as="sourcePoint" />
+<mxPoint x="1034.0" y="295" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="3_Consulter_disponibilite_17" value="Salles correspondant aux critères" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;dashed=1;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="1034.0" y="350" as="sourcePoint" />
+<mxPoint x="806.0" y="350" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="3_Consulter_disponibilite_18" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FBF7EF;strokeColor=#5C4033;" vertex="1" parent="1">
+<mxGeometry x="1034.0" y="295" width="12" height="55" as="geometry" />
+</mxCell>
+<mxCell id="3_Consulter_disponibilite_19" value="SELECT réservations CONFIRMEE chevauchant le créneau" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="806.0" y="405" as="sourcePoint" />
+<mxPoint x="1034.0" y="405" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="3_Consulter_disponibilite_20" value="Réservations existantes sur ces salles" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;dashed=1;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="1034.0" y="460" as="sourcePoint" />
+<mxPoint x="806.0" y="460" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="3_Consulter_disponibilite_21" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FBF7EF;strokeColor=#5C4033;" vertex="1" parent="1">
+<mxGeometry x="1034.0" y="405" width="12" height="55" as="geometry" />
+</mxCell>
+<mxCell id="3_Consulter_disponibilite_22" value="Salles libres (exclusion des salles déjà occupées)" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;dashed=1;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="794.0" y="515" as="sourcePoint" />
+<mxPoint x="566.0" y="515" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="3_Consulter_disponibilite_23" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FBF7EF;strokeColor=#5C4033;" vertex="1" parent="1">
+<mxGeometry x="794.0" y="240" width="12" height="275" as="geometry" />
+</mxCell>
+<mxCell id="3_Consulter_disponibilite_24" value="200 OK + liste des salles disponibles" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;dashed=1;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="554.0" y="570" as="sourcePoint" />
+<mxPoint x="326.0" y="570" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="3_Consulter_disponibilite_25" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FBF7EF;strokeColor=#5C4033;" vertex="1" parent="1">
+<mxGeometry x="554.0" y="185" width="12" height="385" as="geometry" />
+</mxCell>
+<mxCell id="3_Consulter_disponibilite_26" value="Afficher les salles disponibles" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;dashed=1;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="314.0" y="625" as="sourcePoint" />
+<mxPoint x="80" y="625" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="3_Consulter_disponibilite_27" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FBF7EF;strokeColor=#5C4033;" vertex="1" parent="1">
+<mxGeometry x="314.0" y="130" width="12" height="495" as="geometry" />
+</mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="4_Reserver_une_salle" id="4_Reserver_une_salle">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1040" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="4_Reserver_une_salle_2" value="Réserver une salle — contrôle de disponibilité (RG-04 / RG-05)" style="text;html=1;align=center;verticalAlign=middle;fontStyle=1;fontSize=15;fontColor=#3B2F2A;" vertex="1" parent="1">
+<mxGeometry x="40" y="0" width="1100" height="30" as="geometry" />
+</mxCell>
+<mxCell id="4_Reserver_une_salle_3" value="Employé" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E9DCC3;strokeColor=#5C4033;fontColor=#3B2F2A;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+<mxGeometry x="-5" y="40" width="170" height="50" as="geometry" />
+</mxCell>
+<mxCell id="4_Reserver_une_salle_4" style="endArrow=none;dashed=1;html=1;strokeColor=#8B6F47;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="80" y="90" as="sourcePoint" />
+<mxPoint x="80" y="1080" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="4_Reserver_une_salle_5" value="Frontend
+(React)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E9DCC3;strokeColor=#5C4033;fontColor=#3B2F2A;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+<mxGeometry x="235" y="40" width="170" height="50" as="geometry" />
+</mxCell>
+<mxCell id="4_Reserver_une_salle_6" style="endArrow=none;dashed=1;html=1;strokeColor=#8B6F47;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="320" y="90" as="sourcePoint" />
+<mxPoint x="320" y="1080" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="4_Reserver_une_salle_7" value="API
+(Spring Boot)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E9DCC3;strokeColor=#5C4033;fontColor=#3B2F2A;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+<mxGeometry x="475" y="40" width="170" height="50" as="geometry" />
+</mxCell>
+<mxCell id="4_Reserver_une_salle_8" style="endArrow=none;dashed=1;html=1;strokeColor=#8B6F47;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="560" y="90" as="sourcePoint" />
+<mxPoint x="560" y="1080" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="4_Reserver_une_salle_9" value="Service
+Réservation" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E9DCC3;strokeColor=#5C4033;fontColor=#3B2F2A;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+<mxGeometry x="715" y="40" width="170" height="50" as="geometry" />
+</mxCell>
+<mxCell id="4_Reserver_une_salle_10" style="endArrow=none;dashed=1;html=1;strokeColor=#8B6F47;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="800" y="90" as="sourcePoint" />
+<mxPoint x="800" y="1080" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="4_Reserver_une_salle_11" value="PostgreSQL
+(contrainte exclusion)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E9DCC3;strokeColor=#5C4033;fontColor=#3B2F2A;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+<mxGeometry x="975" y="40" width="170" height="50" as="geometry" />
+</mxCell>
+<mxCell id="4_Reserver_une_salle_12" style="endArrow=none;dashed=1;html=1;strokeColor=#8B6F47;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="1060" y="90" as="sourcePoint" />
+<mxPoint x="1060" y="1080" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="4_Reserver_une_salle_13" value="Sélectionner salle, date, heure, durée" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="80" y="130" as="sourcePoint" />
+<mxPoint x="314.0" y="130" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="4_Reserver_une_salle_14" value="POST /api/reservations/" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="326.0" y="185" as="sourcePoint" />
+<mxPoint x="554.0" y="185" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="4_Reserver_une_salle_15" value="creerReservation(dto)" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="566.0" y="240" as="sourcePoint" />
+<mxPoint x="794.0" y="240" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="4_Reserver_une_salle_16" value="SELECT réservations WHERE salle/employé ET chevauchement" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="806.0" y="295" as="sourcePoint" />
+<mxPoint x="1054.0" y="295" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="4_Reserver_une_salle_17" value="Aucun chevauchement (créneau libre)" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;dashed=1;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="1054.0" y="350" as="sourcePoint" />
+<mxPoint x="806.0" y="350" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="4_Reserver_une_salle_18" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FBF7EF;strokeColor=#5C4033;" vertex="1" parent="1">
+<mxGeometry x="1054.0" y="295" width="12" height="55" as="geometry" />
+</mxCell>
+<mxCell id="4_Reserver_une_salle_19" value="INSERT réservation (statut=CONFIRMEE)" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="806.0" y="405" as="sourcePoint" />
+<mxPoint x="1054.0" y="405" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="4_Reserver_une_salle_20" value="Insertion OK (contrainte d&#x27;exclusion respectée)" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;dashed=1;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="1054.0" y="460" as="sourcePoint" />
+<mxPoint x="806.0" y="460" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="4_Reserver_une_salle_21" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FBF7EF;strokeColor=#5C4033;" vertex="1" parent="1">
+<mxGeometry x="1054.0" y="405" width="12" height="55" as="geometry" />
+</mxCell>
+<mxCell id="4_Reserver_une_salle_22" value="Réservation créée" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;dashed=1;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="794.0" y="515" as="sourcePoint" />
+<mxPoint x="566.0" y="515" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="4_Reserver_une_salle_23" value="201 Created + réservation" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;dashed=1;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="554.0" y="570" as="sourcePoint" />
+<mxPoint x="326.0" y="570" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="4_Reserver_une_salle_24" value="Confirmation affichée" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;dashed=1;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="314.0" y="625" as="sourcePoint" />
+<mxPoint x="80" y="625" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="4_Reserver_une_salle_25" value="INSERT réservation (tentative concurrente)" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="806.0" y="710" as="sourcePoint" />
+<mxPoint x="1054.0" y="710" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="4_Reserver_une_salle_26" value="Violation contrainte d&#x27;exclusion (conflit)" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;dashed=1;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="1054.0" y="765" as="sourcePoint" />
+<mxPoint x="806.0" y="765" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="4_Reserver_une_salle_27" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FBF7EF;strokeColor=#5C4033;" vertex="1" parent="1">
+<mxGeometry x="1054.0" y="710" width="12" height="55" as="geometry" />
+</mxCell>
+<mxCell id="4_Reserver_une_salle_28" value="Exception : conflit de réservation" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;dashed=1;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="794.0" y="820" as="sourcePoint" />
+<mxPoint x="566.0" y="820" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="4_Reserver_une_salle_29" value="409 Conflict + réservation bloquante" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;dashed=1;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="554.0" y="875" as="sourcePoint" />
+<mxPoint x="326.0" y="875" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="4_Reserver_une_salle_30" value="Message d&#x27;erreur : créneau indisponible" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;dashed=1;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="314.0" y="930" as="sourcePoint" />
+<mxPoint x="80" y="930" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="4_Reserver_une_salle_31" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FBF7EF;strokeColor=#5C4033;" vertex="1" parent="1">
+<mxGeometry x="794.0" y="240" width="12" height="745" as="geometry" />
+</mxCell>
+<mxCell id="4_Reserver_une_salle_32" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FBF7EF;strokeColor=#5C4033;" vertex="1" parent="1">
+<mxGeometry x="554.0" y="185" width="12" height="800" as="geometry" />
+</mxCell>
+<mxCell id="4_Reserver_une_salle_33" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FBF7EF;strokeColor=#5C4033;" vertex="1" parent="1">
+<mxGeometry x="314.0" y="130" width="12" height="855" as="geometry" />
+</mxCell>
+<mxCell id="4_Reserver_une_salle_34" value="alt" style="shape=umlFrame;whiteSpace=wrap;html=1;width=160;height=30;fillColor=none;strokeColor=#5C4033;verticalAlign=top;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+<mxGeometry x="40" y="310" width="1100" height="690" as="geometry" />
+</mxCell>
+<mxCell id="4_Reserver_une_salle_35" style="endArrow=none;dashed=1;html=1;strokeColor=#5C4033;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="40" y="690" as="sourcePoint" />
+<mxPoint x="1140" y="690" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="4_Reserver_une_salle_36" value="[pas de conflit — RG-04 / RG-05 respectées]" style="text;html=1;align=left;verticalAlign=middle;fontStyle=2;fontSize=11;fontColor=#5C4033;" vertex="1" parent="1">
+<mxGeometry x="60" y="320" width="470" height="20" as="geometry" />
+</mxCell>
+<mxCell id="4_Reserver_une_salle_37" value="[conflit détecté — chevauchement de créneau]" style="text;html=1;align=left;verticalAlign=middle;fontStyle=2;fontSize=11;fontColor=#8B6F47;" vertex="1" parent="1">
+<mxGeometry x="60" y="698" width="470" height="20" as="geometry" />
+</mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="5_Consulter_mes_reservations" id="5_Consulter_mes_reservations">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="630" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="5_Consulter_mes_reservations_2" value="Consulter mes réservations (Employé identifié)" style="text;html=1;align=center;verticalAlign=middle;fontStyle=1;fontSize=15;fontColor=#3B2F2A;" vertex="1" parent="1">
+<mxGeometry x="40" y="0" width="1000" height="30" as="geometry" />
+</mxCell>
+<mxCell id="5_Consulter_mes_reservations_3" value="Employé" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E9DCC3;strokeColor=#5C4033;fontColor=#3B2F2A;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+<mxGeometry x="-5" y="40" width="170" height="50" as="geometry" />
+</mxCell>
+<mxCell id="5_Consulter_mes_reservations_4" style="endArrow=none;dashed=1;html=1;strokeColor=#8B6F47;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="80" y="90" as="sourcePoint" />
+<mxPoint x="80" y="560" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="5_Consulter_mes_reservations_5" value="Frontend
+(React)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E9DCC3;strokeColor=#5C4033;fontColor=#3B2F2A;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+<mxGeometry x="215" y="40" width="170" height="50" as="geometry" />
+</mxCell>
+<mxCell id="5_Consulter_mes_reservations_6" style="endArrow=none;dashed=1;html=1;strokeColor=#8B6F47;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="300" y="90" as="sourcePoint" />
+<mxPoint x="300" y="560" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="5_Consulter_mes_reservations_7" value="API
+(Spring Boot)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E9DCC3;strokeColor=#5C4033;fontColor=#3B2F2A;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+<mxGeometry x="435" y="40" width="170" height="50" as="geometry" />
+</mxCell>
+<mxCell id="5_Consulter_mes_reservations_8" style="endArrow=none;dashed=1;html=1;strokeColor=#8B6F47;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="520" y="90" as="sourcePoint" />
+<mxPoint x="520" y="560" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="5_Consulter_mes_reservations_9" value="Service
+Réservation" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E9DCC3;strokeColor=#5C4033;fontColor=#3B2F2A;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+<mxGeometry x="655" y="40" width="170" height="50" as="geometry" />
+</mxCell>
+<mxCell id="5_Consulter_mes_reservations_10" style="endArrow=none;dashed=1;html=1;strokeColor=#8B6F47;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="740" y="90" as="sourcePoint" />
+<mxPoint x="740" y="560" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="5_Consulter_mes_reservations_11" value="PostgreSQL" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E9DCC3;strokeColor=#5C4033;fontColor=#3B2F2A;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+<mxGeometry x="855" y="40" width="170" height="50" as="geometry" />
+</mxCell>
+<mxCell id="5_Consulter_mes_reservations_12" style="endArrow=none;dashed=1;html=1;strokeColor=#8B6F47;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="940" y="90" as="sourcePoint" />
+<mxPoint x="940" y="560" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="5_Consulter_mes_reservations_13" value="Ouvrir &quot;Mes réservations&quot;" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="80" y="130" as="sourcePoint" />
+<mxPoint x="294.0" y="130" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="5_Consulter_mes_reservations_14" value="GET /api/reservations/?employe={id}" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="306.0" y="185" as="sourcePoint" />
+<mxPoint x="514.0" y="185" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="5_Consulter_mes_reservations_15" value="listerReservationsParEmploye(id)" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="526.0" y="240" as="sourcePoint" />
+<mxPoint x="734.0" y="240" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="5_Consulter_mes_reservations_16" value="SELECT réservations WHERE employe_id = ?" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="746.0" y="295" as="sourcePoint" />
+<mxPoint x="934.0" y="295" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="5_Consulter_mes_reservations_17" value="Liste des réservations (passées + à venir)" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;dashed=1;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="934.0" y="350" as="sourcePoint" />
+<mxPoint x="746.0" y="350" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="5_Consulter_mes_reservations_18" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FBF7EF;strokeColor=#5C4033;" vertex="1" parent="1">
+<mxGeometry x="934.0" y="295" width="12" height="55" as="geometry" />
+</mxCell>
+<mxCell id="5_Consulter_mes_reservations_19" value="Réservations triées par date" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;dashed=1;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="734.0" y="405" as="sourcePoint" />
+<mxPoint x="526.0" y="405" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="5_Consulter_mes_reservations_20" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FBF7EF;strokeColor=#5C4033;" vertex="1" parent="1">
+<mxGeometry x="734.0" y="240" width="12" height="165" as="geometry" />
+</mxCell>
+<mxCell id="5_Consulter_mes_reservations_21" value="200 OK + liste" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;dashed=1;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="514.0" y="460" as="sourcePoint" />
+<mxPoint x="306.0" y="460" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="5_Consulter_mes_reservations_22" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FBF7EF;strokeColor=#5C4033;" vertex="1" parent="1">
+<mxGeometry x="514.0" y="185" width="12" height="275" as="geometry" />
+</mxCell>
+<mxCell id="5_Consulter_mes_reservations_23" value="Afficher le planning personnel" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;dashed=1;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="294.0" y="515" as="sourcePoint" />
+<mxPoint x="80" y="515" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="5_Consulter_mes_reservations_24" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FBF7EF;strokeColor=#5C4033;" vertex="1" parent="1">
+<mxGeometry x="294.0" y="130" width="12" height="385" as="geometry" />
+</mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="6_Modifier_annuler_reservation" id="6_Modifier_annuler_reservation">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1150" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="6_Modifier_annuler_reservation_2" value="Modifier / annuler une réservation (Employé identifié)" style="text;html=1;align=center;verticalAlign=middle;fontStyle=1;fontSize=15;fontColor=#3B2F2A;" vertex="1" parent="1">
+<mxGeometry x="40" y="0" width="1000" height="30" as="geometry" />
+</mxCell>
+<mxCell id="6_Modifier_annuler_reservation_3" value="Employé" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E9DCC3;strokeColor=#5C4033;fontColor=#3B2F2A;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+<mxGeometry x="-5" y="40" width="170" height="50" as="geometry" />
+</mxCell>
+<mxCell id="6_Modifier_annuler_reservation_4" style="endArrow=none;dashed=1;html=1;strokeColor=#8B6F47;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="80" y="90" as="sourcePoint" />
+<mxPoint x="80" y="940" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="6_Modifier_annuler_reservation_5" value="Frontend
+(React)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E9DCC3;strokeColor=#5C4033;fontColor=#3B2F2A;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+<mxGeometry x="215" y="40" width="170" height="50" as="geometry" />
+</mxCell>
+<mxCell id="6_Modifier_annuler_reservation_6" style="endArrow=none;dashed=1;html=1;strokeColor=#8B6F47;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="300" y="90" as="sourcePoint" />
+<mxPoint x="300" y="940" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="6_Modifier_annuler_reservation_7" value="API
+(Spring Boot)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E9DCC3;strokeColor=#5C4033;fontColor=#3B2F2A;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+<mxGeometry x="435" y="40" width="170" height="50" as="geometry" />
+</mxCell>
+<mxCell id="6_Modifier_annuler_reservation_8" style="endArrow=none;dashed=1;html=1;strokeColor=#8B6F47;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="520" y="90" as="sourcePoint" />
+<mxPoint x="520" y="940" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="6_Modifier_annuler_reservation_9" value="Service
+Réservation" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E9DCC3;strokeColor=#5C4033;fontColor=#3B2F2A;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+<mxGeometry x="655" y="40" width="170" height="50" as="geometry" />
+</mxCell>
+<mxCell id="6_Modifier_annuler_reservation_10" style="endArrow=none;dashed=1;html=1;strokeColor=#8B6F47;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="740" y="90" as="sourcePoint" />
+<mxPoint x="740" y="940" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="6_Modifier_annuler_reservation_11" value="PostgreSQL" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E9DCC3;strokeColor=#5C4033;fontColor=#3B2F2A;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+<mxGeometry x="855" y="40" width="170" height="50" as="geometry" />
+</mxCell>
+<mxCell id="6_Modifier_annuler_reservation_12" style="endArrow=none;dashed=1;html=1;strokeColor=#8B6F47;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="940" y="90" as="sourcePoint" />
+<mxPoint x="940" y="940" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="6_Modifier_annuler_reservation_13" value="Sélectionner une réservation + choisir une action" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="80" y="130" as="sourcePoint" />
+<mxPoint x="294.0" y="130" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="6_Modifier_annuler_reservation_14" value="PUT /api/reservations/{id} (nouveau créneau)" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="306.0" y="185" as="sourcePoint" />
+<mxPoint x="514.0" y="185" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="6_Modifier_annuler_reservation_15" value="modifierReservation(id, nouveauCreneau)" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="526.0" y="240" as="sourcePoint" />
+<mxPoint x="734.0" y="240" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="6_Modifier_annuler_reservation_16" value="SELECT réservations : vérifier chevauchement du nouveau créneau" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="746.0" y="295" as="sourcePoint" />
+<mxPoint x="934.0" y="295" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="6_Modifier_annuler_reservation_17" value="Aucun conflit" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;dashed=1;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="934.0" y="350" as="sourcePoint" />
+<mxPoint x="746.0" y="350" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="6_Modifier_annuler_reservation_18" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FBF7EF;strokeColor=#5C4033;" vertex="1" parent="1">
+<mxGeometry x="934.0" y="295" width="12" height="55" as="geometry" />
+</mxCell>
+<mxCell id="6_Modifier_annuler_reservation_19" value="UPDATE réservation SET date/heure/durée" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="746.0" y="405" as="sourcePoint" />
+<mxPoint x="934.0" y="405" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="6_Modifier_annuler_reservation_20" value="OK" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;dashed=1;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="934.0" y="460" as="sourcePoint" />
+<mxPoint x="746.0" y="460" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="6_Modifier_annuler_reservation_21" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FBF7EF;strokeColor=#5C4033;" vertex="1" parent="1">
+<mxGeometry x="934.0" y="405" width="12" height="55" as="geometry" />
+</mxCell>
+<mxCell id="6_Modifier_annuler_reservation_22" value="Réservation modifiée" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;dashed=1;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="734.0" y="515" as="sourcePoint" />
+<mxPoint x="526.0" y="515" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="6_Modifier_annuler_reservation_23" value="200 OK" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;dashed=1;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="514.0" y="570" as="sourcePoint" />
+<mxPoint x="306.0" y="570" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="6_Modifier_annuler_reservation_24" value="Mise à jour affichée" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;dashed=1;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="294.0" y="625" as="sourcePoint" />
+<mxPoint x="80" y="625" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="6_Modifier_annuler_reservation_25" value="PATCH /api/reservations/{id}/annuler" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="306.0" y="710" as="sourcePoint" />
+<mxPoint x="514.0" y="710" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="6_Modifier_annuler_reservation_26" value="annulerReservation(id)" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="526.0" y="765" as="sourcePoint" />
+<mxPoint x="734.0" y="765" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="6_Modifier_annuler_reservation_27" value="UPDATE réservation SET statut = ANNULEE" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="746.0" y="820" as="sourcePoint" />
+<mxPoint x="934.0" y="820" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="6_Modifier_annuler_reservation_28" value="OK (créneau libéré, historique conservé)" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;dashed=1;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="934.0" y="875" as="sourcePoint" />
+<mxPoint x="746.0" y="875" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="6_Modifier_annuler_reservation_29" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FBF7EF;strokeColor=#5C4033;" vertex="1" parent="1">
+<mxGeometry x="934.0" y="820" width="12" height="55" as="geometry" />
+</mxCell>
+<mxCell id="6_Modifier_annuler_reservation_30" value="Annulation confirmée" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;dashed=1;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="734.0" y="930" as="sourcePoint" />
+<mxPoint x="526.0" y="930" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="6_Modifier_annuler_reservation_31" value="200 OK" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;dashed=1;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="514.0" y="985" as="sourcePoint" />
+<mxPoint x="306.0" y="985" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="6_Modifier_annuler_reservation_32" value="Mise à jour affichée" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;dashed=1;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="294.0" y="1040" as="sourcePoint" />
+<mxPoint x="80" y="1040" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="6_Modifier_annuler_reservation_33" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FBF7EF;strokeColor=#5C4033;" vertex="1" parent="1">
+<mxGeometry x="294.0" y="130" width="12" height="965" as="geometry" />
+</mxCell>
+<mxCell id="6_Modifier_annuler_reservation_34" value="alt" style="shape=umlFrame;whiteSpace=wrap;html=1;width=160;height=30;fillColor=none;strokeColor=#5C4033;verticalAlign=top;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+<mxGeometry x="40" y="200" width="940" height="910" as="geometry" />
+</mxCell>
+<mxCell id="6_Modifier_annuler_reservation_35" style="endArrow=none;dashed=1;html=1;strokeColor=#5C4033;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="40" y="690" as="sourcePoint" />
+<mxPoint x="980" y="690" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="6_Modifier_annuler_reservation_36" value="[modifier — nouveau créneau contrôlé]" style="text;html=1;align=left;verticalAlign=middle;fontStyle=2;fontSize=11;fontColor=#5C4033;" vertex="1" parent="1">
+<mxGeometry x="60" y="210" width="470" height="20" as="geometry" />
+</mxCell>
+<mxCell id="6_Modifier_annuler_reservation_37" value="[annuler — statut ANNULEE, pas de suppression]" style="text;html=1;align=left;verticalAlign=middle;fontStyle=2;fontSize=11;fontColor=#8B6F47;" vertex="1" parent="1">
+<mxGeometry x="60" y="698" width="470" height="20" as="geometry" />
+</mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="7_Gerer_les_salles" id="7_Gerer_les_salles">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="630" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="7_Gerer_les_salles_2" value="Gérer les salles (CRUD) — Administrateur authentifié" style="text;html=1;align=center;verticalAlign=middle;fontStyle=1;fontSize=15;fontColor=#3B2F2A;" vertex="1" parent="1">
+<mxGeometry x="40" y="0" width="1000" height="30" as="geometry" />
+</mxCell>
+<mxCell id="7_Gerer_les_salles_3" value="Administrateur" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E9DCC3;strokeColor=#5C4033;fontColor=#3B2F2A;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+<mxGeometry x="-5" y="40" width="170" height="50" as="geometry" />
+</mxCell>
+<mxCell id="7_Gerer_les_salles_4" style="endArrow=none;dashed=1;html=1;strokeColor=#8B6F47;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="80" y="90" as="sourcePoint" />
+<mxPoint x="80" y="560" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="7_Gerer_les_salles_5" value="Frontend
+(React)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E9DCC3;strokeColor=#5C4033;fontColor=#3B2F2A;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+<mxGeometry x="215" y="40" width="170" height="50" as="geometry" />
+</mxCell>
+<mxCell id="7_Gerer_les_salles_6" style="endArrow=none;dashed=1;html=1;strokeColor=#8B6F47;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="300" y="90" as="sourcePoint" />
+<mxPoint x="300" y="560" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="7_Gerer_les_salles_7" value="API
+(Spring Boot)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E9DCC3;strokeColor=#5C4033;fontColor=#3B2F2A;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+<mxGeometry x="435" y="40" width="170" height="50" as="geometry" />
+</mxCell>
+<mxCell id="7_Gerer_les_salles_8" style="endArrow=none;dashed=1;html=1;strokeColor=#8B6F47;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="520" y="90" as="sourcePoint" />
+<mxPoint x="520" y="560" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="7_Gerer_les_salles_9" value="Service Salle" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E9DCC3;strokeColor=#5C4033;fontColor=#3B2F2A;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+<mxGeometry x="655" y="40" width="170" height="50" as="geometry" />
+</mxCell>
+<mxCell id="7_Gerer_les_salles_10" style="endArrow=none;dashed=1;html=1;strokeColor=#8B6F47;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="740" y="90" as="sourcePoint" />
+<mxPoint x="740" y="560" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="7_Gerer_les_salles_11" value="PostgreSQL" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E9DCC3;strokeColor=#5C4033;fontColor=#3B2F2A;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+<mxGeometry x="855" y="40" width="170" height="50" as="geometry" />
+</mxCell>
+<mxCell id="7_Gerer_les_salles_12" style="endArrow=none;dashed=1;html=1;strokeColor=#8B6F47;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="940" y="90" as="sourcePoint" />
+<mxPoint x="940" y="560" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="7_Gerer_les_salles_13" value="Créer / modifier / supprimer une salle" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="80" y="130" as="sourcePoint" />
+<mxPoint x="294.0" y="130" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="7_Gerer_les_salles_14" value="POST / PUT / DELETE /api/salles/{numero}" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="306.0" y="185" as="sourcePoint" />
+<mxPoint x="514.0" y="185" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="7_Gerer_les_salles_15" value="gererSalle(action, donnees)" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="526.0" y="240" as="sourcePoint" />
+<mxPoint x="734.0" y="240" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="7_Gerer_les_salles_16" value="INSERT / UPDATE / DELETE salle" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="746.0" y="295" as="sourcePoint" />
+<mxPoint x="934.0" y="295" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="7_Gerer_les_salles_17" value="Opération confirmée" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;dashed=1;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="934.0" y="350" as="sourcePoint" />
+<mxPoint x="746.0" y="350" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="7_Gerer_les_salles_18" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FBF7EF;strokeColor=#5C4033;" vertex="1" parent="1">
+<mxGeometry x="934.0" y="295" width="12" height="55" as="geometry" />
+</mxCell>
+<mxCell id="7_Gerer_les_salles_19" value="Salle mise à jour" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;dashed=1;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="734.0" y="405" as="sourcePoint" />
+<mxPoint x="526.0" y="405" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="7_Gerer_les_salles_20" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FBF7EF;strokeColor=#5C4033;" vertex="1" parent="1">
+<mxGeometry x="734.0" y="240" width="12" height="165" as="geometry" />
+</mxCell>
+<mxCell id="7_Gerer_les_salles_21" value="200/201 OK" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;dashed=1;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="514.0" y="460" as="sourcePoint" />
+<mxPoint x="306.0" y="460" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="7_Gerer_les_salles_22" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FBF7EF;strokeColor=#5C4033;" vertex="1" parent="1">
+<mxGeometry x="514.0" y="185" width="12" height="275" as="geometry" />
+</mxCell>
+<mxCell id="7_Gerer_les_salles_23" value="Confirmation affichée" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;dashed=1;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="294.0" y="515" as="sourcePoint" />
+<mxPoint x="80" y="515" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="7_Gerer_les_salles_24" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FBF7EF;strokeColor=#5C4033;" vertex="1" parent="1">
+<mxGeometry x="294.0" y="130" width="12" height="385" as="geometry" />
+</mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="8_Gerer_les_employes" id="8_Gerer_les_employes">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="630" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="8_Gerer_les_employes_2" value="Gérer les employés (CRUD) — Administrateur authentifié" style="text;html=1;align=center;verticalAlign=middle;fontStyle=1;fontSize=15;fontColor=#3B2F2A;" vertex="1" parent="1">
+<mxGeometry x="40" y="0" width="1000" height="30" as="geometry" />
+</mxCell>
+<mxCell id="8_Gerer_les_employes_3" value="Administrateur" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E9DCC3;strokeColor=#5C4033;fontColor=#3B2F2A;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+<mxGeometry x="-5" y="40" width="170" height="50" as="geometry" />
+</mxCell>
+<mxCell id="8_Gerer_les_employes_4" style="endArrow=none;dashed=1;html=1;strokeColor=#8B6F47;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="80" y="90" as="sourcePoint" />
+<mxPoint x="80" y="560" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="8_Gerer_les_employes_5" value="Frontend
+(React)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E9DCC3;strokeColor=#5C4033;fontColor=#3B2F2A;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+<mxGeometry x="215" y="40" width="170" height="50" as="geometry" />
+</mxCell>
+<mxCell id="8_Gerer_les_employes_6" style="endArrow=none;dashed=1;html=1;strokeColor=#8B6F47;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="300" y="90" as="sourcePoint" />
+<mxPoint x="300" y="560" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="8_Gerer_les_employes_7" value="API
+(Spring Boot)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E9DCC3;strokeColor=#5C4033;fontColor=#3B2F2A;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+<mxGeometry x="435" y="40" width="170" height="50" as="geometry" />
+</mxCell>
+<mxCell id="8_Gerer_les_employes_8" style="endArrow=none;dashed=1;html=1;strokeColor=#8B6F47;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="520" y="90" as="sourcePoint" />
+<mxPoint x="520" y="560" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="8_Gerer_les_employes_9" value="Service Employé" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E9DCC3;strokeColor=#5C4033;fontColor=#3B2F2A;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+<mxGeometry x="655" y="40" width="170" height="50" as="geometry" />
+</mxCell>
+<mxCell id="8_Gerer_les_employes_10" style="endArrow=none;dashed=1;html=1;strokeColor=#8B6F47;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="740" y="90" as="sourcePoint" />
+<mxPoint x="740" y="560" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="8_Gerer_les_employes_11" value="PostgreSQL" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E9DCC3;strokeColor=#5C4033;fontColor=#3B2F2A;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+<mxGeometry x="855" y="40" width="170" height="50" as="geometry" />
+</mxCell>
+<mxCell id="8_Gerer_les_employes_12" style="endArrow=none;dashed=1;html=1;strokeColor=#8B6F47;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="940" y="90" as="sourcePoint" />
+<mxPoint x="940" y="560" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="8_Gerer_les_employes_13" value="Créer / modifier / supprimer un employé" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="80" y="130" as="sourcePoint" />
+<mxPoint x="294.0" y="130" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="8_Gerer_les_employes_14" value="POST / PUT / DELETE /api/employes/{numero}" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="306.0" y="185" as="sourcePoint" />
+<mxPoint x="514.0" y="185" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="8_Gerer_les_employes_15" value="gererEmploye(action, donnees)" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="526.0" y="240" as="sourcePoint" />
+<mxPoint x="734.0" y="240" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="8_Gerer_les_employes_16" value="INSERT / UPDATE / DELETE employé" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="746.0" y="295" as="sourcePoint" />
+<mxPoint x="934.0" y="295" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="8_Gerer_les_employes_17" value="Opération confirmée" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;dashed=1;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="934.0" y="350" as="sourcePoint" />
+<mxPoint x="746.0" y="350" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="8_Gerer_les_employes_18" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FBF7EF;strokeColor=#5C4033;" vertex="1" parent="1">
+<mxGeometry x="934.0" y="295" width="12" height="55" as="geometry" />
+</mxCell>
+<mxCell id="8_Gerer_les_employes_19" value="Employé mis à jour" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;dashed=1;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="734.0" y="405" as="sourcePoint" />
+<mxPoint x="526.0" y="405" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="8_Gerer_les_employes_20" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FBF7EF;strokeColor=#5C4033;" vertex="1" parent="1">
+<mxGeometry x="734.0" y="240" width="12" height="165" as="geometry" />
+</mxCell>
+<mxCell id="8_Gerer_les_employes_21" value="200/201 OK" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;dashed=1;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="514.0" y="460" as="sourcePoint" />
+<mxPoint x="306.0" y="460" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="8_Gerer_les_employes_22" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FBF7EF;strokeColor=#5C4033;" vertex="1" parent="1">
+<mxGeometry x="514.0" y="185" width="12" height="275" as="geometry" />
+</mxCell>
+<mxCell id="8_Gerer_les_employes_23" value="Confirmation affichée" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;dashed=1;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="294.0" y="515" as="sourcePoint" />
+<mxPoint x="80" y="515" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="8_Gerer_les_employes_24" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FBF7EF;strokeColor=#5C4033;" vertex="1" parent="1">
+<mxGeometry x="294.0" y="130" width="12" height="385" as="geometry" />
+</mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="9_Consulter_toutes_reservations" id="9_Consulter_toutes_reservations">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="630" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="9_Consulter_toutes_reservations_2" value="Consulter toutes les réservations — planning global (Administrateur authentifié)" style="text;html=1;align=center;verticalAlign=middle;fontStyle=1;fontSize=15;fontColor=#3B2F2A;" vertex="1" parent="1">
+<mxGeometry x="40" y="0" width="1050" height="30" as="geometry" />
+</mxCell>
+<mxCell id="9_Consulter_toutes_reservations_3" value="Administrateur" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E9DCC3;strokeColor=#5C4033;fontColor=#3B2F2A;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+<mxGeometry x="-5" y="40" width="170" height="50" as="geometry" />
+</mxCell>
+<mxCell id="9_Consulter_toutes_reservations_4" style="endArrow=none;dashed=1;html=1;strokeColor=#8B6F47;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="80" y="90" as="sourcePoint" />
+<mxPoint x="80" y="560" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="9_Consulter_toutes_reservations_5" value="Frontend
+(React)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E9DCC3;strokeColor=#5C4033;fontColor=#3B2F2A;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+<mxGeometry x="225" y="40" width="170" height="50" as="geometry" />
+</mxCell>
+<mxCell id="9_Consulter_toutes_reservations_6" style="endArrow=none;dashed=1;html=1;strokeColor=#8B6F47;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="310" y="90" as="sourcePoint" />
+<mxPoint x="310" y="560" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="9_Consulter_toutes_reservations_7" value="API
+(Spring Boot)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E9DCC3;strokeColor=#5C4033;fontColor=#3B2F2A;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+<mxGeometry x="455" y="40" width="170" height="50" as="geometry" />
+</mxCell>
+<mxCell id="9_Consulter_toutes_reservations_8" style="endArrow=none;dashed=1;html=1;strokeColor=#8B6F47;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="540" y="90" as="sourcePoint" />
+<mxPoint x="540" y="560" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="9_Consulter_toutes_reservations_9" value="Service
+Réservation" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E9DCC3;strokeColor=#5C4033;fontColor=#3B2F2A;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+<mxGeometry x="685" y="40" width="170" height="50" as="geometry" />
+</mxCell>
+<mxCell id="9_Consulter_toutes_reservations_10" style="endArrow=none;dashed=1;html=1;strokeColor=#8B6F47;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="770" y="90" as="sourcePoint" />
+<mxPoint x="770" y="560" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="9_Consulter_toutes_reservations_11" value="PostgreSQL" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E9DCC3;strokeColor=#5C4033;fontColor=#3B2F2A;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+<mxGeometry x="905" y="40" width="170" height="50" as="geometry" />
+</mxCell>
+<mxCell id="9_Consulter_toutes_reservations_12" style="endArrow=none;dashed=1;html=1;strokeColor=#8B6F47;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="990" y="90" as="sourcePoint" />
+<mxPoint x="990" y="560" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="9_Consulter_toutes_reservations_13" value="Ouvrir le planning global" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="80" y="130" as="sourcePoint" />
+<mxPoint x="304.0" y="130" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="9_Consulter_toutes_reservations_14" value="GET /api/reservations/?periode=..." style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="316.0" y="185" as="sourcePoint" />
+<mxPoint x="534.0" y="185" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="9_Consulter_toutes_reservations_15" value="listerToutesReservations(filtres)" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="546.0" y="240" as="sourcePoint" />
+<mxPoint x="764.0" y="240" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="9_Consulter_toutes_reservations_16" value="SELECT réservations JOIN salle, employé" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="776.0" y="295" as="sourcePoint" />
+<mxPoint x="984.0" y="295" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="9_Consulter_toutes_reservations_17" value="Liste complète des réservations" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;dashed=1;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="984.0" y="350" as="sourcePoint" />
+<mxPoint x="776.0" y="350" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="9_Consulter_toutes_reservations_18" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FBF7EF;strokeColor=#5C4033;" vertex="1" parent="1">
+<mxGeometry x="984.0" y="295" width="12" height="55" as="geometry" />
+</mxCell>
+<mxCell id="9_Consulter_toutes_reservations_19" value="Réservations enrichies (salle, employé, statut)" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;dashed=1;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="764.0" y="405" as="sourcePoint" />
+<mxPoint x="546.0" y="405" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="9_Consulter_toutes_reservations_20" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FBF7EF;strokeColor=#5C4033;" vertex="1" parent="1">
+<mxGeometry x="764.0" y="240" width="12" height="165" as="geometry" />
+</mxCell>
+<mxCell id="9_Consulter_toutes_reservations_21" value="200 OK + planning" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;dashed=1;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="534.0" y="460" as="sourcePoint" />
+<mxPoint x="316.0" y="460" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="9_Consulter_toutes_reservations_22" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FBF7EF;strokeColor=#5C4033;" vertex="1" parent="1">
+<mxGeometry x="534.0" y="185" width="12" height="275" as="geometry" />
+</mxCell>
+<mxCell id="9_Consulter_toutes_reservations_23" value="Afficher planning global + indicateurs" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;dashed=1;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="304.0" y="515" as="sourcePoint" />
+<mxPoint x="80" y="515" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="9_Consulter_toutes_reservations_24" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FBF7EF;strokeColor=#5C4033;" vertex="1" parent="1">
+<mxGeometry x="304.0" y="130" width="12" height="385" as="geometry" />
+</mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="10_Configurer_parametres" id="10_Configurer_parametres">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="630" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="10_Configurer_parametres_2" value="Configurer les paramètres du système — Administrateur authentifié" style="text;html=1;align=center;verticalAlign=middle;fontStyle=1;fontSize=15;fontColor=#3B2F2A;" vertex="1" parent="1">
+<mxGeometry x="40" y="0" width="1000" height="30" as="geometry" />
+</mxCell>
+<mxCell id="10_Configurer_parametres_3" value="Administrateur" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E9DCC3;strokeColor=#5C4033;fontColor=#3B2F2A;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+<mxGeometry x="-5" y="40" width="170" height="50" as="geometry" />
+</mxCell>
+<mxCell id="10_Configurer_parametres_4" style="endArrow=none;dashed=1;html=1;strokeColor=#8B6F47;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="80" y="90" as="sourcePoint" />
+<mxPoint x="80" y="560" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="10_Configurer_parametres_5" value="Frontend
+(React)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E9DCC3;strokeColor=#5C4033;fontColor=#3B2F2A;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+<mxGeometry x="215" y="40" width="170" height="50" as="geometry" />
+</mxCell>
+<mxCell id="10_Configurer_parametres_6" style="endArrow=none;dashed=1;html=1;strokeColor=#8B6F47;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="300" y="90" as="sourcePoint" />
+<mxPoint x="300" y="560" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="10_Configurer_parametres_7" value="API
+(Spring Boot)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E9DCC3;strokeColor=#5C4033;fontColor=#3B2F2A;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+<mxGeometry x="435" y="40" width="170" height="50" as="geometry" />
+</mxCell>
+<mxCell id="10_Configurer_parametres_8" style="endArrow=none;dashed=1;html=1;strokeColor=#8B6F47;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="520" y="90" as="sourcePoint" />
+<mxPoint x="520" y="560" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="10_Configurer_parametres_9" value="Service
+Configuration" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E9DCC3;strokeColor=#5C4033;fontColor=#3B2F2A;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+<mxGeometry x="655" y="40" width="170" height="50" as="geometry" />
+</mxCell>
+<mxCell id="10_Configurer_parametres_10" style="endArrow=none;dashed=1;html=1;strokeColor=#8B6F47;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="740" y="90" as="sourcePoint" />
+<mxPoint x="740" y="560" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="10_Configurer_parametres_11" value="PostgreSQL" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E9DCC3;strokeColor=#5C4033;fontColor=#3B2F2A;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+<mxGeometry x="855" y="40" width="170" height="50" as="geometry" />
+</mxCell>
+<mxCell id="10_Configurer_parametres_12" style="endArrow=none;dashed=1;html=1;strokeColor=#8B6F47;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="940" y="90" as="sourcePoint" />
+<mxPoint x="940" y="560" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="10_Configurer_parametres_13" value="Modifier les paramètres (types de salle, seuils, etc.)" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="80" y="130" as="sourcePoint" />
+<mxPoint x="294.0" y="130" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="10_Configurer_parametres_14" value="PUT /api/config/" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="306.0" y="185" as="sourcePoint" />
+<mxPoint x="514.0" y="185" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="10_Configurer_parametres_15" value="mettreAJourConfiguration(params)" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="526.0" y="240" as="sourcePoint" />
+<mxPoint x="734.0" y="240" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="10_Configurer_parametres_16" value="UPDATE configuration" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="746.0" y="295" as="sourcePoint" />
+<mxPoint x="934.0" y="295" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="10_Configurer_parametres_17" value="OK" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;dashed=1;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="934.0" y="350" as="sourcePoint" />
+<mxPoint x="746.0" y="350" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="10_Configurer_parametres_18" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FBF7EF;strokeColor=#5C4033;" vertex="1" parent="1">
+<mxGeometry x="934.0" y="295" width="12" height="55" as="geometry" />
+</mxCell>
+<mxCell id="10_Configurer_parametres_19" value="Configuration mise à jour" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;dashed=1;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="734.0" y="405" as="sourcePoint" />
+<mxPoint x="526.0" y="405" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="10_Configurer_parametres_20" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FBF7EF;strokeColor=#5C4033;" vertex="1" parent="1">
+<mxGeometry x="734.0" y="240" width="12" height="165" as="geometry" />
+</mxCell>
+<mxCell id="10_Configurer_parametres_21" value="200 OK" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;dashed=1;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="514.0" y="460" as="sourcePoint" />
+<mxPoint x="306.0" y="460" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="10_Configurer_parametres_22" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FBF7EF;strokeColor=#5C4033;" vertex="1" parent="1">
+<mxGeometry x="514.0" y="185" width="12" height="275" as="geometry" />
+</mxCell>
+<mxCell id="10_Configurer_parametres_23" value="Confirmation affichée" style="html=1;endArrow=block;strokeColor=#5C4033;fontColor=#3B2F2A;fontSize=11;strokeWidth=2;dashed=1;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="294.0" y="515" as="sourcePoint" />
+<mxPoint x="80" y="515" as="targetPoint" />
+</mxGeometry>
+</mxCell>
+<mxCell id="10_Configurer_parametres_24" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FBF7EF;strokeColor=#5C4033;" vertex="1" parent="1">
+<mxGeometry x="294.0" y="130" width="12" height="385" as="geometry" />
+</mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

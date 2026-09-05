@@ -1,0 +1,23 @@
+# Secrets
+.env
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+
+# Editeurs
+.idea/
+*.swp
+.DS_Store
+
+# Archives
+*.zip
+
+# Maven
+maven/target/
